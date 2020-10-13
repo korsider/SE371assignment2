@@ -1,0 +1,156 @@
+/*as mentioned in html file in the html PAGE. the purpose of this class is to style the menue elemnt
+and control its position by making display = inline-block */
+.menueElement{
+  display: inline-block;
+  margin-left: 95px;
+  color: white;
+  align: center;
+}
+/*margin=0 here removes the spaces at the edges, and the rest of the elemnts are pretty much self descriptive
+however, I did it here so I can avoid redundancy and not write the styles for each elemnt in the for example the
+font family after I wrote it here I don't have to write anywhere else because it's already implemnted by the body and html
+*/
+body, html{
+  height: 100%;
+  margin: 0px;
+  font-family: 'Noto Sans JP', sans-serif;
+
+  background-color: #3b3e44;
+
+}
+/*changinh the color and the font size when the mouse is on an <a> tag,
+ and setting the transition to make it smoother*/
+a:hover {
+  background-color: black;
+  font-size: 120%;
+  transition: 0.5s;
+}
+
+/*changing the color of a visited anchor*/
+a:visited {
+  color: #525151;
+}
+/*simply styling the anchor*/
+a{
+  text-decoration: none;
+  color: white;
+
+}
+/*simply styling the headr2*/
+h2{
+  color: #d2d2d2;
+}
+/*simply styling the paragraph*/
+p{
+  color: #9e9c9c;
+}
+/*simply styling the header3*/
+h3{
+  text-transform: uppercase;
+  color: #bbbbbb;
+}
+/*styling the main menu and it's position*/
+.styleOfMenue{
+  width: 100%;
+  margin: 0px;
+  margin-top: 6px;
+  background-color:#3b3e44;
+}
+/*styling the main menu and it's position (fixing the menue above)*/
+.menueContainer{
+  width: 100%;
+  margin: 0px;
+  margin-top: -6px;
+  position: fixed;
+}
+
+/*banner styling*/
+#htmlImage{
+  background-color: #D84315;
+  background-repeat: no-repeat;
+  background-size:cover;
+  background-attachment: fixed;
+  margin-top: 0px;
+  height: 380px;
+/*banner styling*/
+}
+#contactUs{
+  background-color: white;
+  background-repeat: no-repeat;
+  background-size:cover;
+  background-attachment: fixed;
+  margin-top: 0px;
+  height: 700px;
+}
+/*banner styling*/
+#jacaScriptImage{
+  background-color: #FFCA28;
+  background-repeat: no-repeat;
+  background-size:cover;
+  background-attachment: fixed;
+  margin-top: 0px;
+  height: 380px;
+}
+/*banner styling*/
+#cssImage{
+  background-color: #298ed0;
+  background-repeat: no-repeat;
+  background-size:cover;
+  background-attachment: fixed;
+  margin-top: 0px;
+  height: 380px;
+}
+/*banner styling*/
+#phpImage{
+  background-color: #ecb8ff;
+  background-repeat: no-repeat;
+  background-size:cover;
+  background-attachment: fixed;
+  margin-top: 0px;
+  height: 380px;
+}
+/*preventing the user form changing the size of the textarea*/
+textarea {
+   resize: none;
+}
+/*simply styling the header1*/
+h1{
+  font-weight: bold;
+  margin-bottom: 0px;
+  display: inline-block;
+  font-size:100px;
+  padding: 10px;
+  color: #31313c;
+  text-transform: uppercase;
+}
+/*styling the background of the */
+.dropbtn {
+  background-color: inherit;
+  padding: 0px;
+  border: none;
+}
+/*making the size and position decent of the dropdwon */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+/*making the size and position decent of the dropdwon elemnts*/
+.dropdownContent {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+/*styling the anchors in the dropdown*/
+.dropdownContent a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+/*styling the anchors in the dropdown (HOVER)*/
+.dropdownContent a:hover { color: white;}
+/*positioning dropdown*/
+.dropdown:hover .dropdownContent {display: block;}
